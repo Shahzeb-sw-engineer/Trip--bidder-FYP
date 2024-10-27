@@ -1,0 +1,393 @@
+.main-layout {
+    margin: 10px 18px;
+    padding: 0;
+}
+
+.flex-layout {
+    display: flex;
+    gap: 10px;
+}
+
+.side {
+    border: var(--custom-border);
+    padding: 13px 17px;
+    border-radius: 7px;
+    min-height: 70vh;
+}
+
+.side-sm {
+    width: 30%;
+}
+
+.side-lg {
+    width: 70%;
+}
+
+.side-xsm {
+    width: 20%;
+}
+
+.side-xl {
+    width: 80%;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.searchbar input {
+    width: 93%;
+}
+
+/* .searchbar .search-icon{
+    display: flex;
+    width: 5%;
+    background-color: var(--primary-color);
+    padding: 12px 14px;
+} */
+.searchbar .search-icon .icon-tag {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    width: 45px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.searchbar .filter-icon {
+    display: none;
+}
+
+
+/* all plans section  */
+.plans {
+    margin: 15px 0;
+}
+
+
+.plans .plan {
+    width: 100%;
+    border: var(--custom-border);
+    background-color: var(--primary-light-color);
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.plan .main-split {
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan .main-split .title-side {
+    width: 75%;
+    cursor: pointer;
+}
+
+.plan .plan-title {
+    color: var(--primary-color);
+}
+
+.feature {
+    padding: 3px 12px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+.plan .divider {
+    width: 2px;
+    height: 25px;
+    background-color: var(--dark-color);
+}
+
+.plan .saveIcon {
+    cursor: pointer;
+}
+
+.plan .saveIcon.saved {
+    color: var(--primary-color);
+}
+
+/* ----FILTER---------- */
+.filters .hideFilterIcon {
+    display: none;
+}
+
+.filters .radioInput {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid var(--primary-color);
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+    margin-top: 4px;
+}
+
+.filters .radioInput::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--primary-color);
+}
+
+.filters .radioInput:checked::before {
+    transform: scale(1);
+}
+
+.filters .checkboxInput {
+    width: 15px;
+    accent-color: var(--primary-color);
+}
+
+
+/* ------- View Plan ----------- */
+.planDetails .features-layout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* ----- TAB ------  */
+.tab {
+    display: flex;
+    padding: 4px 9px;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.tab .tab-item {
+    width: 50%;
+    padding: 4px 9px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab .tab-item.active {
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    color: var(--white-color);
+}
+
+
+/* ----- Proposals ------  */
+.proposal {
+    width: 100%;
+    border: var(--custom-border);
+    padding: 15px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.proposal .main-split {
+    display: flex;
+    justify-content: space-between;
+}
+
+.proposal .divider {
+    width: 2px;
+    height: 25px;
+    background-color: var(--dark-color);
+}
+
+.proposal .agent-info {
+    width: 150px;
+    margin-left: auto;
+}
+
+.proposal .agent-info .split {
+    display: flex;
+    align-items: center;
+}
+
+.proposal .agent-info .image {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.proposal .agent-info .image img {
+    width: 100%;
+}
+
+
+/* -------- Chats ------  */
+.chats .allchats {
+    height: 65vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.chats .allchats::-webkit-scrollbar {
+    display: none;
+}
+
+.chats .allchats .chat-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    background-color: var(--primary-light-color);
+    padding: 4px 7px;
+    border: var(--custom-border);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chats .allchats .chat-item.active {
+    background-color: var(--primary-color);
+    color: #fff !important;
+}
+
+.chats .allchats .chat-item.active .paragraph-sm {
+    color: #fff !important;
+}
+
+.allchats .chat-item .image {
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.chat-item .image img {
+    width: 100%;
+}
+
+.chats .messages-section {
+    position: relative;
+    height: 65vh;
+}
+
+.chats .messages {
+    padding: 20px inherit;
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.chats .messages::-webkit-scrollbar {
+    display: none;
+}
+
+.chats .messages .message-bubble {
+    background-color: var(--primary-light-color);
+    margin-bottom: 8px;
+    padding: 8px 9px;
+    border-radius: 8px;
+    width: fit-content;
+    max-width: 400px;
+    border: var(--custom-border);
+}
+
+.chats .message-bubble.my-message {
+    float: left;
+}
+
+.chats .message-bubble.other-message {
+    margin-left: auto;
+    background-color: aliceblue;
+}
+
+.chats .send-message {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    bottom: 0;
+    width: 97%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+
+
+/* Create trip with AI  */
+.ai-trip-section .ai-form{
+    margin: 0 12rem;
+    padding: 30px;
+    margin-top: 4rem;
+    border-radius: 13px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .0628);
+
+}
+
+.ai-trip-section .trip-result{
+    border-radius: 13px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .0628);
+    background-color: white;
+    padding: 33px;
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+.trip-result .paragraph{
+    text-wrap: wrap;
+}
+.trip-result .loader{
+    /* position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto auto; */
+}
+
+
+/* ---- MODAL OF ACCEPTING BID -----  */
+.accept-proposal-modal{
+    position: fixed;
+    top: -80rem;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    padding: 3rem 4rem;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 33px rgba(0, 0, 0, .1687);
+    height: auto;
+    transition: all .1s ease-in;
+}
+.accept-proposal-modal.show{
+    top: 5rem;
+
+}
+.accept-proposal-modal .closeModalIcon{
+    position: absolute;
+    right: 2rem;
+    top: 19px;
+    font-size: 23px;
+    cursor: pointer;
+}

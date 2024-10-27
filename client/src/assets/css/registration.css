@@ -1,0 +1,174 @@
+
+/* ---------- LOGIN ----------------  */
+.topbar .nav-logo{
+    width: 50px;
+    color: var(--primary-color);
+}
+.register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.register .register-container{
+    width: 37%;
+    /* box-shadow: 0 0 12px rgba(0, 0, 0, 0.15); */
+    border-radius: 8px;
+    padding: 25px 0;
+}
+
+.register-container .content{
+    text-align: center;
+}
+.register-container .logo{
+    width: 50px;
+    color: var(--primary-color);
+}
+
+.register .form{
+    width: 80%;
+    margin: 15px auto;
+    display: block;
+}
+.register .form .form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+
+.form-group .input-icon{
+    position: absolute;
+    top: 27%;
+    right: 4%;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+
+
+/* -------------Acount type --------------  */
+.accountType .split{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.accountType .split .column{
+    width: 70%;
+    border: 1px solid var(--primary-color);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    padding: 16px;
+}
+.accountType .split .column:hover{
+    background-color: var(--primary-light-color);
+}
+
+.accountType .column .role-icon{
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+.accountType .column .role-heading{
+    font-size: 2.2rem;
+}
+
+
+/* --------- Account Info ---------  */
+.accountInfo{
+    padding-top: 15px;
+}
+.register .info-container{
+    width: 80%;
+    padding: 10px 20px;
+    /* box-shadow: 0 0 6px rgba(0, 0, 0, 0.15); */
+}
+
+.info-container .info-form{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    margin-top: 20px;
+}
+.info-container .info-form .side{
+    width: 50%;
+}
+
+.info-form .form-group{
+    margin-bottom: 15px;
+}
+
+
+/* ------- TRIP INFO ----------  */
+.tripinfo{
+    padding-top: 15px;
+}
+.tripinfo .info-container{
+    padding: 10px 13%;
+    
+}
+.tripinfo .content{
+    text-align: center;
+}
+.trip-info-form{
+    margin-top: 50px;
+}
+.chooseimage{
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 8px;
+}
+.chooseimage:hover{
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);
+}
+.chooseimage .fileinput{
+    visibility: hidden;
+}
+.chooseimage .upload-icon{
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.trip-info-form .accomodation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ .radios{
+    display: flex;
+}
+ .radios .radio{
+    width: 60px;
+    height: 40px;
+    background-color: var(--primary-light-color);
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+ .radio.active{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}

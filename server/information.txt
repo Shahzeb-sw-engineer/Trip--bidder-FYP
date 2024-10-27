@@ -1,0 +1,39 @@
+APIS to be developed 
+USER:
+1. Register -d
+2. Login -d
+3. Verify Email -d
+4. Add User info -d
+5. Get User by Id -d
+6. Get User by Id and Role -d
+7. Get All Users -d
+8. Update User info -d
+9. Update User status -d
+
+TRIP: 
+1. Create Trip -d
+2. Update Trip -d 
+3. Save Trip/Favourite
+4. Delete Trip -d
+5. Update Trip -d
+6. Update status
+7. Get Trip by Id -d
+8. Get All Trips -d
+9. Get User's Trips (userid) -d
+
+BID:
+1. Create Bid -d
+2. Update Bid -d
+3. Update Status -d
+4. Get Bid by Id -d
+5. Get All Bids On Trip (Trip ID) -d
+6. Get agents's Bids (userid) -d
+
+FAVOURITES:
+1. Add to Favourite -d 
+2. Get all favourites on userid -d
+
+CHATS:
+1. Send Message -d
+2. Fetch Messages -d 
+3. Fetch contact list -d 

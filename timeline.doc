@@ -1,0 +1,25 @@
+WORK DONE:
+User authentication ie register, Login, Profile
+Posting trip
+Edit trip
+Delete trip
+Save trip
+Bid on trip
+View Bid
+View all bids to agent
+edit Bid
+View all bids to traveller
+View bids on specific trip plan
+accept Bid
+reject Bid
+Add the agent data in view proposal for traveller
+
+
+TODO: 
+Add traveller data and agent data when getting the trip details
+
+
+
+Add review 
+View Review
+Chatting

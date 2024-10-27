@@ -1,0 +1,351 @@
+@media screen and (max-width: 1150px) {
+    .register .register-container {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navbar {
+        position: relative;
+    }
+
+    .navbar .profile {
+        display: none;
+    }
+
+    .bars-icon {
+        display: block !important;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 30px;
+        margin: auto 0;
+        font-size: 22px;
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+
+    .cross-icon {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 30px;
+        margin: auto 0;
+        font-size: 22px;
+        color: var(--danger-color);
+        cursor: pointer;
+        z-index: 6;
+    }
+
+    .cross-icon.show {
+        display: block !important;
+    }
+
+    .navbar .split .nav-split {
+        /* display: none; */
+        position: fixed;
+        top: -1000px;
+        left: 0;
+        width: 100%;
+        height: 100dvh;
+        background-color: var(--white-color);
+        z-index: 5;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        transition: all .2s ease;
+    }
+
+    .navbar .split .nav-split.show {
+        top: 0;
+    }
+
+    .navbar .nav-split .links {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-split .links .link {
+        margin: 0;
+        margin-bottom: 15px;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+
+    .navbar .nav-split .account {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .account a {
+        margin-right: 0;
+        margin-bottom: 15px;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+
+    .account button {
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+
+
+    /* hero  */
+    .hero .image::before {
+        display: none;
+    }
+
+    .register .register-container {
+        width: 60%;
+    }
+
+    .accountType .split {
+        width: 80%;
+    }
+
+
+    /* plans page  */
+    .side-sm {
+        width: 20%;
+    }
+
+    .side-lg {
+        width: 80%;
+    }
+
+    .filters .sortby {
+        flex-direction: column !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .view-plan .flex-layout{
+        flex-direction: column;
+    }
+    .flex-layout {
+        flex-direction: column;
+    }
+    .side-sm {
+        width: 100%;
+    }
+
+    .side-lg {
+        width: 100%;
+    }
+
+    .side-xsm {
+        width: 100%;
+    }
+
+    .side-xl {
+        width: 100% !important;
+    }
+
+    .hero .split {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero .split .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero .split .image {
+        display: none;
+    }
+
+    .services .services-cards{
+        grid-template-columns: repeat(2, 49%);
+        gap: 10px;
+        margin-top: 35px;
+    }
+
+    .about .split {
+        flex-direction: column;
+    }
+
+    .about .split .mycard {
+        width: 100%;
+    }
+
+    .register .register-container {
+        width: 65%;
+    }
+
+    .accountType .split {
+        width: 100%;
+    }
+
+    .info-container .info-form {
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 20px;
+    }
+
+    .info-container .info-form .side {
+        width: 100%;
+    }
+
+
+    .features-grid {
+        grid-template-columns: repeat(1, 100%);
+        margin-top: 30px;
+    }
+
+    .testimonials .info{
+        display: none;
+    }
+    .testimonials .reviews{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+
+    /* plans page  */
+    .searchbar input {
+        width: 82%;
+    }
+
+    .searchbar .search-icon {
+        width: 17%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .searchbar .search-icon .filter-icon {
+        display: block;
+        color: var(--white-color);
+        background-color: var(--primary-color);
+        width: 45px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .flex-layout {
+        flex-direction: column-reverse;
+    }
+
+    .side-sm {
+        width: 100%;
+    }
+
+    .side-lg {
+        width: 100%;
+    }
+
+    /* .filters{
+        right: -500px;
+    } */
+    .filters {
+        position: absolute;
+        width: 80%;
+        right: -650px;
+        top: 90px;
+        background-color: var(--white-color);
+        z-index: 10;
+        padding: 25px 20px;
+        transition: 0.2s all;
+    }
+
+    .filters.show {
+        right: 15px;
+
+    }
+
+    .filters .hideFilterIcon {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 19px;
+        color: var(--primary-color);
+    }
+
+    .filters .sortby {
+        flex-direction: row !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .custom-container {
+        width: min(100%, 80rem) !important;
+    }
+
+    .paragraph-sm {
+        font-size: 10px;
+    }
+
+    .register .register-container {
+        width: 75%;
+    }
+
+    .accountType .split {
+        flex-direction: column;
+    }
+
+    .accountType .split .column {
+        width: 100%;
+    }
+
+    .accountInfo .info-container {
+        width: 75%;
+    }
+
+    .tripinfo .info-container {
+        padding: 20px 20px;
+    }
+
+    /* plans  */
+    .searchbar input {
+        width: 75%;
+    }
+
+    .searchbar .search-icon {
+        width: 22%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .plan .main-split {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .plan .main-split .title-side {
+        width: 100%;
+    }
+
+    .plan .allfeatures {
+        flex-direction: column !important;
+        gap: 10px;
+    }
+
+    .plan .divider {
+        display: none;
+    }
+
+    .plan .saveIcon {
+        float: right;
+    }
+
+}
+
+/* mobile devices  */
+@media screen and (max-width: 500px) {
+    .register .register-container {
+        width: 85%;
+    }
+
+    .accountInfo .info-container {
+        width: 85%;
+    }
+}
